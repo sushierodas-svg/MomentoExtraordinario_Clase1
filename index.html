@@ -3,55 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vista Previa Podcast</title>
+    <title>Podcast Extraordinarios</title>
     <style>
-        /* Fondo oscuro para que combine con tu diseño */
-        body {
-            background-color: #0B162C; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        /* Contenedor que agrupa la imagen y el reproductor */
-        .contenedor-podcast {
-            position: relative;
-            width: 100%;
-            max-width: 800px; 
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0px 15px 40px rgba(0,0,0,0.6);
-        }
-        .imagen-fondo {
-            width: 100%;
-            display: block;
-        }
-        /* Reproductor de audio sobrepuesto en la parte inferior de la imagen */
-        audio {
-            position: absolute;
-            bottom: 15px; 
-            left: 50%;
-            transform: translateX(-50%);
-            width: 90%;
-            opacity: 0.95;
-            filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.5));
-        }
+        body { background-color: #0B162C; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: Arial, sans-serif; }
+        .contenedor-podcast { position: relative; width: 100%; max-width: 800px; border-radius: 15px; overflow: hidden; box-shadow: 0px 15px 40px rgba(0,0,0,0.6); }
+        .imagen-fondo { width: 100%; display: block; }
+        audio { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); width: 85%; }
     </style>
 </head>
 <body>
-
     <div class="contenedor-podcast">
-        <!-- Llama a tu imagen de diseño -->
-        <img src="image.png" alt="Diseño de Podcast Extraordinarios" class="imagen-fondo" onerror="this.src='https://placehold.co/800x500/0B162C/FFFFFF?text=Tu+Imagen+Aqui'">
-        
-        <!-- Reproductor de audio actualizado con el nombre que tienes en GitHub -->
+        <img src="image.png" alt="Portada Podcast" class="imagen-fondo">
+        <!-- Reproductor de MP3 más compatible -->
         <audio controls>
-            <source src="clase1.m4a" type="audio/mp4">
-            Tu navegador no soporta el elemento de audio.
+            <source src="clase1.mp3" type="audio/mpeg">
+            Tu navegador no soporta el audio.
         </audio>
     </div>
-
 </body>
 </html>
